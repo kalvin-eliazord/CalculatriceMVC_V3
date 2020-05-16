@@ -12,6 +12,10 @@ import javax.swing.JTextField;
 
 public class SaveEleve extends JFrame {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel panelEnregistrement = new JPanel();
 	private JLabel labelNom = new JLabel("Insérez votre nom: ");
 	private JTextField textNom = new JTextField(10);
@@ -39,24 +43,19 @@ public class SaveEleve extends JFrame {
 	}
 	
 	public String getTextNom() {
-		
-		String stringTextNom = textNom.getText().toString();
-		return stringTextNom;
+		return textNom.getText();
 	}
 
 	public String getTextPrenom() {
 		
-		String stringTextPrenom = textPrenom.getText().toString();
-		return stringTextPrenom;
+		return textPrenom.getText();
 	}
 	
 	public void ecouteurBouttonValider (ActionListener ActionBoutValider) {
-		
 		bouttonValider.addActionListener(ActionBoutValider);
 	}
 
 	public void affichagePopUp(String message){
-
 		JOptionPane.showMessageDialog(this, message);
 	}	
 }

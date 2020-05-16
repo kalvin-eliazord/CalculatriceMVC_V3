@@ -4,15 +4,16 @@ import java.awt.Color;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
-import Modele.CalculatriceModele;
 
 // classe qui affiche la pub 
 
 public class CalculatricePub extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JLabel affichagePub = new JLabel("PUBLICITE : Venez manger chez Mcdo !! (c)");
 	private JPanel fenetrePub = new JPanel();
 	

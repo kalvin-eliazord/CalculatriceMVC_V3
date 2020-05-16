@@ -22,7 +22,7 @@ public class MainCalculatrice {
         
     	CalculatriceModele leModele = new CalculatriceModele();
         
-        CalculatriceControleur leControleur = new CalculatriceControleur(laVue, leModele, laPub, laBDD, lEnregistrement); 
+       CalculatriceControleur leControleur = new CalculatriceControleur(laVue, leModele, laPub, laBDD, lEnregistrement); 
         
     }
 }
